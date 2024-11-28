@@ -87,15 +87,15 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.total{
-  top:0;
-  left: 0;
-  justify-content: space-around;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  position: absolute;
-}
-
+/*.total{
+//  top:0;
+//  left: 0;
+//  justify-content: space-around;
+//  display: flex;
+//  flex-direction: column;
+//  margin: 0 auto;
+//  position: absolute;
+//}
+*/
 /* 添加样式，确保图表显示良好 */
 </style>

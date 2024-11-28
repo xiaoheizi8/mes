@@ -1,5 +1,5 @@
 <template>
-  <div id="main" style="width: 700px; height: 700px; justify-content: center; display: flex;"></div>
+  <div id="main" style="width: 100%; height: 500px; justify-content: center; display: flex;"></div>
 </template>
 
 <script setup>
@@ -49,10 +49,10 @@ function renderChart() {
         type: 'pie',
         radius: ['40%', '70%'],
         avoidLabelOverlap: false,
-        label: {
-          show: true,
-          formatter: '{b}: {c} ({d}%)' // 标签显示数量和百分比
-        },
+        // label: {
+        //   show: true,
+        //   formatter: '{b}: {c} ({d}%)' // 标签显示数量和百分比
+        // },
         emphasis: {
           label: {
             show: true,
@@ -83,6 +83,9 @@ function renderChart() {
       }
     }
   };
+
+
+
 
   myChart.setOption(option);
 }

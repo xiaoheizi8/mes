@@ -4,6 +4,7 @@ const routes = [
     {
         path:"/",
         component:Index
+        // child
     }
 
 ]
