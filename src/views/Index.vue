@@ -19,6 +19,7 @@
     <div class="right">
       <ProductionTotal/>
       <AllSalesTotal/>
+      <SalesRank/>
     </div>
   
   <timer/>
@@ -40,11 +41,13 @@ import CarbonList from "../components/center/CarbonList.vue";
 import SalePlan from "../components/center/SalePlan.vue";
 import SalesTotal from "../components/center/SalesTotal.vue";
 import AllSalesTotal from "../components/right/AllSalesTotal.vue";
+import SalesRank from "../components/right/SalesRank.vue";
 // import Table from "../components/Table.vue";
 
 export default {
   name: "Index",
   components: {
+    SalesRank,
     AllSalesTotal,
     SalesTotal,
     SalePlan, CarbonList, TotalShow, ProductionTotal, DataShow, DataTable, PowerCount, Timer, Total}
