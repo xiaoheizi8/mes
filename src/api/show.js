@@ -7,3 +7,8 @@ export function getTotalCount(){
 }
 export function getAll(){
     return request(`api/warn/getAll`)}
+export function getTables(){
+    return request(`api/prod/getTables`)}
+export function totalAll(){
+    return request(`api/sales/queryTotalUp`)
+}

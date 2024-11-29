@@ -5,16 +5,19 @@
 <div class="main">
     <div class="left">
       <total/>
+      <PowerCount/>
+      <DataTable/>
     </div>
     <div class="center">
-      <PowerCount/>
-<!--      <DataShow/>-->
-      <DataTable/>
+<TotalShow/>
 
     </div>
     <div class="right">
-      <timer/>
+
+      <ProductionTotal/>
     </div>
+  
+  <timer/>
 </div>
 
 
@@ -27,11 +30,13 @@ import Timer from "../components/Timer.vue";
 import PowerCount from "../components/PowerCount.vue";
 import DataTable from "../components/DataTable.vue";
 import DataShow from "../components/DataShow.vue";
+import ProductionTotal from "../components/ProductionTotal.vue";
+import TotalShow from "../components/center/TotalShow.vue";
 // import Table from "../components/Table.vue";
 
 export default {
   name: "Index",
-  components: { DataShow, DataTable, PowerCount, Timer, Total}
+  components: {TotalShow, ProductionTotal, DataShow, DataTable, PowerCount, Timer, Total}
 }
 
 
@@ -43,19 +48,21 @@ export default {
   flex-direction: row;
 }
 .left{
-  width: 20%;
+   width: 35%;
   border: solid 1px black;
 }
 .center{
-  width: 60%;
+  width: 35%;
+
   border: solid 1px blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
+  top: 0;
 }
 .right{
-  width: 20%;
+  width: 35%;
   border: solid 1px red;
 }
 </style>

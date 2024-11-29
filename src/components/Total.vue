@@ -1,8 +1,8 @@
 <template>
   <div class="total">
-    <div id="electricity" style="width: 300px; height: 300px;"></div>
-    <div id="water" style="width: 300px; height: 300px;"></div>
-    <div id="carbon" style="width: 300px; height: 300px;"></div>
+    <div id="electricity" style="width: 200px; height: 200px;"></div>
+    <div id="water" style="width: 200px; height: 200px;"></div>
+    <div id="carbon" style="width: 200px; height: 200px;"></div>
   </div>
 </template>
 
@@ -32,8 +32,9 @@ async function getData() {
 const renderElectricityChart = () => {
   const chart = echarts.init(document.getElementById("electricity"));
   chart.setOption({
-    title: { text: "总耗电量", left: "center" },
+
     tooltip: { formatter: "{a} <br/>{c} kWh" },
+    title: { text: "总耗电量", left: "center" },
     series: [
       {
         name: "耗电量",
@@ -87,15 +88,5 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-/*.total{
-//  top:0;
-//  left: 0;
-//  justify-content: space-around;
-//  display: flex;
-//  flex-direction: column;
-//  margin: 0 auto;
-//  position: absolute;
-//}
-*/
-/* 添加样式，确保图表显示良好 */
+
 </style>

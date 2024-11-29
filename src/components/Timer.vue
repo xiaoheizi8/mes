@@ -36,8 +36,8 @@ let timer=null;
 <style scoped>
 .time-tag {
   position: fixed;
-  top: 20px; /* 可以根据需要调整 */
-  right: 20px; /* 可以根据需要调整 */
+  top: 0px; /* 可以根据需要调整 */
+  right: 0px; /* 可以根据需要调整 */
   background-color: #f0f0f0; /* 标签背景颜色 */
   border: 1px solid #ddd; /* 标签边框 */
   border-radius: 8px; /* 标签圆角 */
