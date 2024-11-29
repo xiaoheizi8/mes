@@ -12,4 +12,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
+  server:{
+    port:8081
+  }
 })

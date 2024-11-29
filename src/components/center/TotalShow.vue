@@ -112,9 +112,9 @@ const renderCharts = () => {
         }
       },
       grid: {
-        left: '12%',
-        right: '20%',
-        bottom: '20%',  // 修改了底部的距离，确保标签不被遮挡
+        left: '22%',
+        right: '30%',
+        bottom: '30%',  // 修改了底部的距离，确保标签不被遮挡
         containLabel: true
       },
       xAxis: {

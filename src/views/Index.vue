@@ -9,12 +9,16 @@
       <DataTable/>
     </div>
     <div class="center">
-<TotalShow/>
+      <TotalShow/>
+<CarbonList/>
+  <SalePlan/>
+      <SalesTotal/>
 
     </div>
-    <div class="right">
 
+    <div class="right">
       <ProductionTotal/>
+      <AllSalesTotal/>
     </div>
   
   <timer/>
@@ -32,11 +36,18 @@ import DataTable from "../components/DataTable.vue";
 import DataShow from "../components/DataShow.vue";
 import ProductionTotal from "../components/ProductionTotal.vue";
 import TotalShow from "../components/center/TotalShow.vue";
+import CarbonList from "../components/center/CarbonList.vue";
+import SalePlan from "../components/center/SalePlan.vue";
+import SalesTotal from "../components/center/SalesTotal.vue";
+import AllSalesTotal from "../components/right/AllSalesTotal.vue";
 // import Table from "../components/Table.vue";
 
 export default {
   name: "Index",
-  components: {TotalShow, ProductionTotal, DataShow, DataTable, PowerCount, Timer, Total}
+  components: {
+    AllSalesTotal,
+    SalesTotal,
+    SalePlan, CarbonList, TotalShow, ProductionTotal, DataShow, DataTable, PowerCount, Timer, Total}
 }
 
 
@@ -48,7 +59,7 @@ export default {
   flex-direction: row;
 }
 .left{
-   width: 35%;
+  width: 35%;
   border: solid 1px black;
 }
 .center{
@@ -62,7 +73,7 @@ export default {
   top: 0;
 }
 .right{
-  width: 35%;
+  width: 30%;
   border: solid 1px red;
 }
 </style>

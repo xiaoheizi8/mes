@@ -16,7 +16,7 @@ const startScrolling = () => {
 };
 let intervalId;
 const getStockStatusClass = (status) => {
-  console.log(status); // 打印 scope 对象以便于调试
+  // console.log(status); // 打印 scope 对象以便于调试
   switch (status) {
     case '正常':
       return 'stock-status-normal';
